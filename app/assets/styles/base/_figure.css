@@ -1,0 +1,7 @@
+/* Figure
+ *********/
+
+figcaption {
+  font-size: $font-scale-small;
+  text-align: center;
+}

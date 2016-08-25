@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="{{ if isset .Params "language" }}{{ .Params.language }}{{ else }}{{ .Site.LanguageCode }}{{ end }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>
+    {{ if .IsHome }}
+      {{ .Site.Data.settings.homepage_title }}
+    {{ else }}
+      {{ .Title | plainify }} - {{ .Site.Data.settings.title }}
+    {{ end}}
+  </title>
+
+  <!-- Mobile -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="{{ .Site.Data.settings.title }}">
+
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+
+  <!-- Prefetch -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  {{ if not .IsHome }}
+    <link rel="prerender" href="{{ .Site.BaseURL }}">
+  {{ end }}
+  {{ if .IsPage }}
+    {{ if .NextInSection }}
+      <link rel="prefetch" href="{{ .NextInSection.Permalink }}">
+    {{ end }}
+    {{ if .PrevInSection }}
+      <link rel="prefetch" href="{{ .PrevInSection.Permalink }}">
+    {{ end }}
+  {{ end }}
+
+  <!-- Fonts -->
+  {{ partial "fonts" . }}
+  <meta http-equiv="cleartype" content="on">
+
+  <!-- Robots -->
+  {{ if and (.IsNode) (ne .IsHome true) }}
+    <meta name="robots" content="noindex,follow">
+  {{ else }}
+    {{ if isset .Params "robots" }}
+      <meta name="robots" content="{{ .Params.robots }}">
+    {{ else}}
+      <meta name="robots" content="all">
+    {{ end }}
+  {{ end }}
+
+  <!-- Description -->
+  <meta name="description" content="{{ if isset .Params "description" }}{{ .Params.description }}{{ else }}{{ .Site.Data.settings.seo.description }}{{ end }}">
+
+  <!-- Twitter Card -->
+  {{ if .IsHome }}
+    <meta name="twitter:card" content="summary">
+  {{ else }}
+    <meta name="twitter:card" content="summary_large_image">
+  {{ end }}
+  <meta name="twitter:site" content="{{ .Site.Data.settings.social.twitter }}">
+  <meta name="twitter:url" content="{{ .Permalink }}">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Data.settings.homepage_title }}{{ else }}{{ replace .Title "&nbsp;" " " | plainify }} - {{ .Site.Data.settings.title }}{{ end}}">
+  <meta name="twitter:description" content="{{ if isset .Params "description" }}{{ .Params.description }}{{ else }}{{ .Site.Data.settings.seo.description }}{{ end }}">
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}assets/images/{{ if isset .Params "og_image" }}{{ .Params.og_image }}{{ else}}assets/images/og/rakkan.png{{ end }}">
+
+  <!-- OpenGraph-->
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Data.settings.homepage_title }}{{ else }}{{ replace .Title "&nbsp;" " " | plainify }} - {{ .Site.Data.settings.title }}{{ end}}">
+  <meta property="og:description" content="{{ if isset .Params "description" }}{{ .Params.description }}{{ else }}{{ .Site.Data.settings.seo.description }}{{ end }}">
+  <meta property="og:image" content="{{ .Site.BaseURL }}assets/images/{{ if isset .Params "og_image" }}{{ .Params.og_image }}{{ else}}assets/images/og/rakkan.png{{ end }}">
+
+  <!-- Google Authorship -->
+  <link href="https://plus.google.com/{{ .Site.Data.settings.social.googleplus }}" rel="publisher">
+
+  <!-- Language -->
+  <meta name="content-language" content="{{ if isset .Params "language" }}{{ .Params.language }}{{ else }}{{ .Site.LanguageCode }}{{ end }}">
+
+  <!-- Author -->
+  <meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Data.settings.author }}{{ end }}">
+  <link type="text/plain" rel="author" href="{{ .Site.BaseURL }}humans.txt">
+
+  <!-- Geo -->
+  <meta name="icbm" content="{{ .Site.Data.settings.geo.latitude }},{{ .Site.Data.settings.geo.longitude }}">
+  <meta name="geo.position" content="{{ .Site.Data.settings.geo.latitude }};{{ .Site.Data.settings.geo.longitude }}">
+
+  <!-- Keywords -->
+  <meta name="keywords" content="{{ if isset .Params "keywords" }}{{ .Params.keywords | plainify }}{{ else }}{{ .Site.Data.settings.seo.keywords }}{{ end }}">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" href="{{ .Site.BaseURL }}assets/images/apple/touch-icon-iphone.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ .Site.BaseURL }}assets/images/apple/touch-icon-ipad.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ .Site.BaseURL }}assets/images/apple/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ .Site.BaseURL }}assets/images/apple/touch-icon-ipad-retina.png">
+
+  <meta name="msapplication-TileImage" content="{{ .Site.BaseURL }}assets/images/ms/metro-tile.png">
+  <meta name="msapplication-TileColor" content="#b42b2c">
+
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico" type="image/x-icon">
+  <link rel="icon" href="{{ .Site.BaseURL }}favicon.ico" type="image/x-icon">
+  <link rel="mask-icon" sizes="any" href="{{ .Site.BaseURL }}assets/images/svg/mask.svg" color="#b42b2c">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- Critical CSS -->
+  {{ partial "critical" . }}
+
+  {{ "<!--[if lt IE 9]>" | safeHTML }}
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <style>header#top {background-image:none;}</style>
+  {{ "<![endif]-->" | safeHTML }}
+
+  <!-- Feeds -->
+  <link href="{{ .Site.Data.settings.social.feedburner_url }}" rel="alternate" title="{{ .Site.Data.settings.title }}" type="application/rss+xml">
+  <link href="{{ .Site.Data.settings.social.feedburner_url }}" rel="feed" title="{{ .Site.Data.settings.title }}" type="application/rss+xml">
+
+  <!-- OpenID -->
+  <link rel="openid.server" href="{{ .Site.Data.settings.openid.server }}">
+  <link rel="openid.delegate" href="{{ .Site.Data.settings.openid.delegate }}">
+  <meta http-equiv="X-XRDS-Location" content="{{ .Site.Data.settings.openid.xrds }}">
+
+  <!-- Generator -->
+  {{ .Hugo.Generator }}
+
+  <!-- Switch off Microsoft junk -->
+  <meta name="MSSmartTagsPreventParsing" content="true">
+  <meta http-equiv="imagetoolbar" content="no">
+
+  <!-- JSON-LD Site name -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "Stefan Imhoff",
+      "url": "http://stefanimhoff.de"
+    }
+  </script>
+
+  <!-- Statistics -->
+  {{ partial "head/mint" . }}
+  {{ partial "head/google_analytics" . }}
+</head>

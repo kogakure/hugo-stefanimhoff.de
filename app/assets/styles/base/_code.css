@@ -1,0 +1,65 @@
+/* Code
+ *******/
+
+code {
+  @extend mono-font;
+  background-color: $white;
+  border-color: $light-grey;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  font-size: $modular-scale-0;
+  padding-bottom: 0.2em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  padding-top: 0.2em;
+}
+
+/* Code Hightlight */
+pre {
+  code {
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.06) 0 0 10px;
+    clear: both;
+    display: block;
+    line-height: 1.2;
+    lost-column: 10/8 0;
+    lost-move: -1/8;
+    margin-bottom: $default-spacing-bottom;
+    margin-right: 0;
+    overflow-x: auto !important;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+
+    @media screen and (width <= $content-medium) {
+      clear: both;
+      lost-column: 8/8;
+      lost-move: 0;
+    }
+  }
+}
+
+
+/* Variable */
+var {
+  font-style: italic;
+}
+
+
+/* Sample output */
+samp {
+  @extend mono-font;
+  background: $sample-background;
+  border-radius: 0.4em;
+  color: $sample-color;
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: $base-line-height;
+  padding-bottom: 0;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  padding-top: 0;
+  white-space: nowrap;
+}

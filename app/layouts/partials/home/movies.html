@@ -1,0 +1,24 @@
+<section class="stripe stripe-movies">
+  <div class="wrap">
+    <h2 class="stripe-movies-headline">Movie Fan</h2>
+    <div class="stripe-content">
+      <p>I love movies and TV shows. Most of my space on shelves is occupied by my books, that’s why I don’t own a lot of movies. But I regularly use LoveFilm, Netflix, Watchever and Amazon Prime. I love all genre, especially Action, Comedy, Sci-Fi and Fantasy, but no horror movies. This is my <a href="http://www.imdb.com/user/ur15936207/">IMDb profile</a> and my <a href="http://www.imdb.com/user/ur15936207/ratings">ratings</a>.</p>
+    </div>
+
+    <div class="inline-container">
+      {{ range .Site.Data.movies.movie }}
+        <h3 class="inline-container-headline">{{ .name }}</h3>
+        <ul class="inline-container-list">
+          {{ range .items }}
+            <li class="inline-container-item">
+              <a class="inline-container-link" href="http://www.imdb.com/title/{{ .id }}/">
+                {{ .text }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
+
+  </div>
+</section>

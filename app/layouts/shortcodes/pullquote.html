@@ -1,0 +1,10 @@
+{{ if .Get "quote" }}
+  <p>
+    <span class="pullquote-{{ if .Get "class" }}{{ .Get "class" }}{{ else }}right{{ end }}" data-pullquote="{{ .Get "quote" }}"></span>
+  </p>
+  {{ .Inner }}
+{{ else }}
+<blockquote{{ if .Get "language" }} lang="{{ .Get "language" }}"{{ end }} class="pullquote">
+  {{ .Inner }}
+</blockquote>
+{{ end }}

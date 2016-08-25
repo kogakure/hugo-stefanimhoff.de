@@ -1,0 +1,32 @@
+<header id="top" class="header attribution-main" role="banner">
+
+  {{ partial "attribution_header" . }}
+
+  <div class="wrap">
+
+    <div class="header-logo">
+
+      {{ if .IsHome }}
+        <img class="header-logo-image" src="{{ .Site.BaseURL }}assets/images/svg/logo.svg" alt="">
+      {{ else }}
+        <a class="header-logo-link" href="{{ .Site.BaseURL }}">
+          <img class="header-logo-image" src="{{ .Site.BaseURL }}assets/images/svg/logo.svg" alt="">
+        </a>
+      {{ end }}
+    </div>
+
+    <div class="header-info">
+        {{ if .IsHome }}
+        <h1 class="header-info-title">{{ .Site.Data.settings.title }}</h1>
+        <h2 class="header-info-tagline">{{ .Site.Data.settings.seo.description }}</h2>
+      {{ else }}
+        <a class="header-info-title-link" href="{{ .Site.BaseURL }}">
+          <div class="header-info-title">{{ .Site.Data.settings.title }}</div>
+          <div class="header-info-tagline">{{ .Site.Data.settings.seo.description }}</div>
+        </a>
+      {{ end }}
+    </div>
+
+  </div>
+
+</header>

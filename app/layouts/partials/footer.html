@@ -1,0 +1,77 @@
+<footer class="footer" role="contentinfo">
+  <div class="wrap">
+    <div class="footer-about">
+      <h3 class="footer-about-headline">About me</h3>
+      <div class="footer-about-table">
+        <div class="footer-about-image-table-cell">
+          <div class="footer-about-image-shadow">
+            <img class="footer-about-image" src="/assets/images/css/footer/stefan-imhoff.jpg" alt="Stefan Imhoff">
+          </div>
+        </div>
+      <div class="footer-about-text">
+        <p>
+          <em>Stefan Imhoff</em>, Web Developer, Designer, Minimalist, Geek, Introvert, Japanophile.
+          Works as Front-End Engineer at <a href="https://www.xing.com/profile/Stefan_Imhoff">XING</a>.
+          Lives in <a href="https://www.pinterest.com/kogakure/hamburg/">Hamburg</a>.
+          Loves <a href="https://www.pinterest.com/kogakure/ninja-ninjutsu/">Ninja &amp; Ninjutsu</a>,
+          <a href="https://www.pinterest.com/kogakure/fitness-calisthenics/">Calisthenics</a>,
+          <a href="http://www.imdb.com/user/ur15936207/ratings">Movies</a>,
+          <a href="https://www.goodreads.com/user/show/28460819-stefan">Books</a>,
+          <a href="https://www.pinterest.com/kogakure/architecture/">Architecture</a>,
+          <a href="https://www.pinterest.com/kogakure/interior-design/">Interior Design</a>,
+          <a href="https://www.pinterest.com/kogakure/art-design/">Art &amp; Design</a>,
+          <a href="https://www.pinterest.com/kogakure/sketchnotes/">Sketchnotes</a>,
+          <a href="https://www.pinterest.com/kogakure/lettering/">Lettering</a>,
+          <a href="https://www.pinterest.com/kogakure/typography/">Typography</a>,
+          Philosophy, Japan,
+          <a href="https://www.pinterest.com/kogakure/irezumi-tebori/">Japanese Tattoos</a>,
+          <a href="https://www.pinterest.com/kogakure/thunderstorm-lightning-rain/">Thunderstorm &amp; Rain</a>,
+          <a href="https://www.pinterest.com/kogakure/sun/">Sun</a>,
+          <a href="https://www.pinterest.com/kogakure/ocean-sea/">the Sea</a>,
+          <a href="https://www.pinterest.com/kogakure/beach-coast/">Beaches</a>,
+          <a href="https://www.pinterest.com/kogakure/trees-roots/">Trees</a>,
+          <a href="https://www.pinterest.com/kogakure/bamboo/">Bamboo</a>,
+          <a href="https://flipboard.com/@kogakure/time-lapse-slow-motion-e3hoo13ay">Time Lapse &amp; Slow Motion</a>,
+          <a href="https://www.pinterest.com/kogakure/kanji/">Kanji</a>,
+          <a href="https://www.pinterest.com/kogakure/wabi-sabi/">Wabi Sabi</a>,
+          <a href="https://de.wikipedia.org/wiki/Hochzeitssuppe">Niedersächsiche Hochzeitssuppe</a>,
+          <a href="/haiku/">Haiku</a> and
+          <a href="https://github.com/kogakure/dotfiles/blob/master/vim/vimrc.symlink">Vim</a>.
+        </p>
+      </div>
+      </div>
+    </div>
+    <div class="footer-social">
+      <h3 class="footer-social-headline">Elsewhere</h3>
+      <ul class="footer-social-list">
+        {{ range .Site.Data.sociallinks.link }}
+        <li class="footer-social-list-item">
+          <a href="{{ .url }}" class="footer-social-link">
+            <svg class="footer-social-icon"><use xlink:href="#{{ .class }}"></use></svg><span class="footer-social-link-text">{{ .name }}</span>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+
+  {{ partial "navigation" . }}
+
+  <small class="footer-legal">
+    <div class="wrap">
+      <div class="footer-legal-copyright">
+        <b class="footer-legal-copyright-sign">©</b>
+        <span class="nobr">2006-{{ .Now.Format "2006" }}</span>,
+        <span class="nobr">Stefan Imhoff</span>.
+        The content of this page is published under a
+        <span class="nobr">
+          <a class="footer-legal-link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <svg class="footer-legal-icon-cc"><use xlink:href="#cc"></use></svg> Creative Commons
+          </a>
+          Licence.
+        </span>
+      </div>
+    </div>
+  </small>
+
+</footer>

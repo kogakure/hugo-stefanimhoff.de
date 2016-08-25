@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<main class="main wrap" role="main">
+  <div class="archive-posts">
+    <h1 class="archive-headline">
+      Articles
+    </h1>
+    {{ range (where .Site.Pages "Type" "articles") }}
+      <article class="archive-post">
+        <time class="archive-post-time" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}" pubdate>
+          {{ .Date.Format "02.01.2006" }}
+        </time>
+        <h2 class="archive-post-item">
+          <a href="{{ .Permalink }}">
+            {{ .Title }}
+          </a>
+        </h2>
+      </article>
+    {{ end }}      
+  </div>
+</main>
+
+{{ end }}

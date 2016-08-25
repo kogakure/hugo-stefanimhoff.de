@@ -1,0 +1,10 @@
+{{ if isset .Params "tags" }}
+<div class="tags">
+  <svg class="classification-icon">
+    <use xlink:href="#tag"></use>
+  </svg>
+  {{ range .Params.tags }}
+    <a class="tags-link" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+  {{ end }}
+</div>
+{{ end }}

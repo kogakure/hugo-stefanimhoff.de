@@ -1,0 +1,25 @@
+<h1>{{ .Title }}</h1>
+
+{{ if not (eq .Params.header false) }}
+  <header class="article-header">
+    {{ if not (eq .Params.meta false) }}
+    <div class="meta">
+      <span class="author">
+        <svg class="meta-icon"><use xlink:href="#quill"></use></svg>
+        {{ if isset .Params "author" }}
+          {{ .Params.author }}
+        {{ else }}
+          {{ .Site.Data.settings.author }}
+        {{ end }}
+      </span>
+      <span class="publication">
+        {{ partial "articles/date" . }}
+      </span>
+    </div>
+    {{ end }}
+    <div class="classification">
+      {{ partial "articles/categories" . }}
+      {{ partial "articles/tags" . }}
+    </div>
+  </header>
+{{ end }}

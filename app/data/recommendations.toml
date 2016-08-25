@@ -1,0 +1,185 @@
+[[recommendation]]
+  category = "Inspiration"
+
+  [[recommendation.items]]
+    text = "TED"
+    url = "http://www.ted.com/"
+
+  [[recommendation.items]]
+    text = "Brainpickings"
+    url = "https://www.brainpickings.org/"
+
+  [[recommendation.items]]
+    text = "Explore"
+    url = "http://explore.brainpickings.org/"
+
+  [[recommendation.items]]
+    text = "The School of Life"
+    url = "https://www.youtube.com/user/schooloflifechannel"
+
+  [[recommendation.items]]
+    text = "AsapSCIENCE"
+    url = "https://www.youtube.com/user/AsapSCIENCE"
+
+  [[recommendation.items]]
+    text = "WellCast"
+    url = "https://www.youtube.com/user/watchwellcast"
+
+  [[recommendation.items]]
+    text = "Kurzgesagt"
+    url = "https://www.youtube.com/user/Kurzgesagt"
+
+  [[recommendation.items]]
+    text = "Zen Pencils"
+    url = "http://zenpencils.com/"
+
+  [[recommendation.items]]
+    text = "99U"
+    url = "http://99u.com/"
+
+  [[recommendation.items]]
+    text = "Big Think"
+    url = "http://bigthink.com/"
+
+  [[recommendation.items]]
+    text = "ChangeThis"
+    url = "http://changethis.com/"
+
+  [[recommendation.items]]
+    text = "Signal vs. Noise"
+    url = "https://signalvnoise.com/"
+
+  [[recommendation.items]]
+    text = "Information Architects"
+    url = "https://ia.net/know-how"
+
+[[recommendation]]
+  category = "Design"
+
+  [[recommendation.items]]
+    text = "The Elements *of* Typographic Style Applied to the Web"
+    url = "http://webtypography.net/"
+
+  [[recommendation.items]]
+    text = "Modular Scale"
+    url = "http://www.modularscale.com/"
+
+  [[recommendation.items]]
+    text = "LostGrid"
+    url = "https://github.com/peterramsing/lost"
+
+  [[recommendation.items]]
+    text = "Responsive Resources"
+    url = "http://bradfrost.github.io/this-is-responsive/resources.html"
+
+  [[recommendation.items]]
+    text = "Media Queries"
+    url = "http://mediaqueri.es/"
+
+  [[recommendation.items]]
+    text = "ColorHexa"
+    url = "http://www.colorhexa.com/"
+
+[[recommendation]]
+  category = "Code"
+
+  [[recommendation.items]]
+    text = "Hugo"
+    url = "http://gohugo.io/q"
+
+  [[recommendation.items]]
+    text = "Jekyll"
+    url = "http://jekyllrb.com/"
+
+  [[recommendation.items]]
+    text = "Octopress"
+    url = "http://octopress.org/"
+
+[[recommendation]]
+  category = "Automation"
+
+  [[recommendation.items]]
+    text = "Gulp"
+    url = "http://gulpjs.com/"
+
+[[recommendation]]
+  category = "Hosting"
+
+  [[recommendation.items]]
+    text = "Webfaction"
+    url = "https://www.webfaction.com/?affiliate=kogakure"
+
+[[recommendation]]
+  category = "Social Media"
+
+  [[recommendation.items]]
+    text = "XING"
+    url = "https://www.xing.com/profile/Stefan_Imhoff"
+
+  [[recommendation.items]]
+    text = "LinkedIn"
+    url = "https://www.linkedin.com/in/kogakure"
+
+  [[recommendation.items]]
+    text = "About.me"
+    url = "https://about.me/kogakure"
+
+  [[recommendation.items]]
+    text = "Facebook"
+    url = "https://www.facebook.com/kogakure"
+
+  [[recommendation.items]]
+    text = "Google+"
+    url = "https://plus.google.com/+stefanimhoff/"
+
+  [[recommendation.items]]
+    text = "Twitter"
+    url = "https://twitter.com/kogakure"
+
+  [[recommendation.items]]
+    text = "Flipboard"
+    url = "https://flipboard.com/@kogakure"
+
+  [[recommendation.items]]
+    text = "Pinterest"
+    url = "https://www.pinterest.com/kogakure/"
+
+  [[recommendation.items]]
+    text = "Tumblr"
+    url = "http://kogakure.tumblr.com/"
+
+  [[recommendation.items]]
+    text = "Flickr"
+    url = "https://www.flickr.com/photos/kogakure/"
+
+  [[recommendation.items]]
+    text = "Fitbit"
+    url = "https://www.fitbit.com/user/234BKN"
+
+  [[recommendation.items]]
+    text = "GitHub"
+    url = "https://github.com/kogakure"
+
+  [[recommendation.items]]
+    text = "Last.fm"
+    url = "http://www.last.fm/user/kogakure"
+
+  [[recommendation.items]]
+    text = "YouTube"
+    url = "https://www.youtube.com/channel/UCwzOIyXBFg2jNKMcLOwu8Jw"
+
+  [[recommendation.items]]
+    text = "Vimeo"
+    url = "https://vimeo.com/kogakure"
+
+  [[recommendation.items]]
+    text = "IMDb"
+    url = "http://www.imdb.com/user/ur15936207/"
+
+  [[recommendation.items]]
+    text = "Good Reads"
+    url = "http://www.goodreads.com/kogakure"
+
+  [[recommendation.items]]
+    text = "Kiva"
+    url = "https://www.kiva.org/lender/kogakure"

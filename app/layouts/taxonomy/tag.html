@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<main class="main wrap" role="main">
+  <div class="archive-posts">
+    <div>
+      <h1 class="archive-headline">
+        Tag: {{ lower .Title }}
+      </h1>
+
+      {{ range .Data.Pages }}
+        <article class="archive-post">
+          <time class="archive-post-time" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}" pubdate>
+            {{ .Date.Format "02.01.2006" }}
+          </time>
+          <h2 class="archive-post-item">
+            <a href="{{ .RelPermalink }}">
+              {{ .Title }}
+            </a>
+          </h2>
+        </article>
+      {{ end }}  
+      
+    </div>
+  </div>
+</main>
+
+{{ end }}

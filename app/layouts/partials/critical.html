@@ -1,0 +1,40 @@
+{{ if .Site.Params.criticalcss }}
+
+  <style>
+  {{ if .IsHome }}
+    {{ print (partial "critical/critical_homepage.css" .) | safeCSS }}
+  {{ else }}
+    {{ print (partial "critical/critical.css" .) | safeCSS }}
+  {{ end }}
+  </style>
+
+  <script>
+    {{ print (partial "critical/loadCSS.js" .) | safeJS }}
+    loadCSS("/assets/css/application.css");
+    {{ if isset .Params "custom_css"  }}
+      loadCSS("/assets/css/{{ .Params.custom_css }}.css");
+    {{ end }}
+  </script>
+
+  <noscript>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/application.css">
+    {{ if isset .Params "custom_css"  }}
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/{{ .Params.custom_css }}.css">
+    {{ end }}
+  </noscript>
+
+{{ else }}
+
+  {{ if .IsHome }}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/critical_homepage.css">
+  {{ else }}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/critical.css">
+  {{ end }}
+  
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/application.css">
+
+    {{ if isset .Params "custom_css"  }}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/{{ .Params.custom_css }}.css">
+  {{ end }}
+
+{{ end }}

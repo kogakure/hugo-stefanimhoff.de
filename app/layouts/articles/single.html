@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main class="main wrap" role="main">
+  <article class="article" role="article">
+
+    {{ partial "articles/meta" . }}
+      
+    <div class="article-body">
+      {{ .Content }}
+    </div>
+    
+    {{ partial "articles/related_posts" . }}
+    {{ partial "articles/pagination" . }}
+    {{ partial "articles/comments" . }}
+  </article>
+</main>
+{{ end }}

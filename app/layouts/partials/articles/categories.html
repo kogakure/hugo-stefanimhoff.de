@@ -1,0 +1,10 @@
+{{ if isset .Params "categories" }}
+<div class="categories">
+  <svg class="classification-icon">
+    <use xlink:href="#folder"></use>
+  </svg>
+  {{ range .Params.categories }}
+    <a class="categories-link" href="{{ "/categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+  {{ end }}
+</div>
+{{ end }}

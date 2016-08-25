@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <main class="main wrap" role="main">
+    <article class="article" role="article">
+      {{ partial "articles/meta" . }}
+      
+      <div class="article-body">
+        {{ .Content }}
+      </div>
+    </article>
+  </main>
+{{ end }}

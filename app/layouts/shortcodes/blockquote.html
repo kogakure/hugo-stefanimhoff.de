@@ -1,0 +1,25 @@
+<blockquote>
+  {{ .Inner }}
+  {{ if or (.Get "author") (.Get "cite") (.Get "url") }}
+  <footer>
+    {{ if .Get "author" }}
+    <strong>{{ .Get "author" }}</strong>
+    {{ end }}
+    {{ if or (.Get "cite") (.Get "url") }}
+    <cite>
+      {{ if .Get "url" }}
+        <a href="{{ .Get "url" }}">
+          {{ if .Get "cite" }}
+            {{ .Get "cite" }}
+          {{ else }}
+            {{ .Get "url" }}
+          {{ end }}
+        </a>
+      {{ else }}
+        {{ .Get "cite" }}
+      {{ end }}
+    </cite>
+    {{ end }}    
+  </footer>
+  {{ end }}
+</blockquote>

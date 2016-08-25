@@ -1,0 +1,9 @@
+{{ if .Get "url" }}<a href="{{ .Get "url" }}">{{ end }}
+<img src="{{ if in (.Get "src") "http" }}{{ .Get "src" }}{{ else }}{{ .Site.BaseURL }}assets/images/{{ .Get "src" }}{{ end }}"
+{{ if .Get "class" }} class="{{ .Get "class" }}"{{ end }}
+{{ if .Get "alt" }} alt="{{ .Get "alt" }}"{{ end }}
+{{ if .Get "title" }} title="{{ .Get "title" }}"{{ end }}
+{{ if .Get "width" }} width="{{ .Get "width" }}"{{ end }}
+{{ if .Get "height" }} height="{{ .Get "height" }}"{{ end }}
+/>
+{{ if .Get "url" }}</a>{{ end }}

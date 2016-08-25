@@ -1,0 +1,22 @@
+author = "Stefan Imhoff"
+email = "stefan@imhoff.name"
+homepage_title = "Stefan Imhoff - Developer/Designer from Hamburg, Germany"
+title = "Stefan Imhoff"
+
+[geo]
+  latitude = "53.596835"
+  longitude = "10.102015"
+
+[openid]
+  delegate = "http://kogakure.myopenid.com/"
+  server = "http://www.myopenid.com/server"
+  xrds = "http://kogakure.myopenid.com/xrds"
+
+[seo]
+  description = "Web Developer / Designer / Minimalist / Geek / Introvert / Japanophile"
+  keywords = "Stefan Imhoff, Hamburg, Frontend, Engineer"
+
+[social]
+  feedburner_url = "http://feeds.feedburner.com/stefanimhoff"
+  googleplus = "104687479698350625994"
+  twitter = "@kogakure"

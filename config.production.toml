@@ -1,0 +1,72 @@
+baseurl         = "http://stefanimhoff.de/"
+title           = "stefanimhoff.de"
+languageCode    = "en"
+paginate        = 0
+buildDrafts     = false
+buildFuture     = false
+disable404      = true
+enableRobotsTXT = true
+watch           = true
+
+archtetypedir = "app/archetype"
+contentdir    = "app/content"
+dataDir       = "app/data"
+layoutdir     = "app/layouts"
+publishdir    = "build/production"
+staticdir     = "app/static"
+themesdir     = "app/themes"
+
+[blackfriday]
+  smartypants     = false
+  plainIDAnchors  = true
+  hrefTargetBlank = true
+  extensions      = [""]
+
+[permalinks]
+  articles = "/:year/:slug/"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[[menu.main]]
+  name   = "Home"
+  url    = "/"
+  weight = 0
+[[menu.main]]
+  name   = "Articles"
+  url    = "/articles/"
+  weight = 10
+[[menu.main]]
+  name   = "Categories"
+  url    = "/categories/"
+  weight = 20
+[[menu.main]]
+  name   = "Tags"
+  url    = "/tags/"
+  weight = 30
+
+[[menu.misc]]
+  name   = "Haiku"
+  url    = "/haiku/"
+  weight = 0
+[[menu.misc]]
+  name   = "Styleguide"
+  url    = "/styleguide/"
+  weight = 10
+[[menu.misc]]
+  name   = "Impressum"
+  url    = "/impressum/"
+  weight = 20
+
+[params]
+  criticalcss    = true
+  disqus         = "disqus-username"
+
+  [params.attribution]
+  name     = "「大宮盆栽×タムロン」大宮盆栽美術館で盆栽撮影にチャレンジ！ブロガーイベント"
+  url      = "https://www.flickr.com/photos/norio-nakayama/9156103138"
+  author   = "Norio NAKAYAMA"
+  cc       = true
+  language = "ja"

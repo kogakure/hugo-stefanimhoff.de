@@ -1,0 +1,18 @@
+<section class="stripe stripe-recommendations inline-container">
+  <div class="wrap">
+    <h2>Link Recommendations</h2>
+
+    {{ range .Site.Data.recommendations.recommendation }}
+      <h3 class="inline-container-headline">{{ .category }}</h3>
+      <ul class="inline-container-list">
+        {{ range .items }}
+          <li class="inline-container-item">
+            <a class="inline-container-link" href="{{ .url }}">
+              {{ .text | markdownify }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+</section>

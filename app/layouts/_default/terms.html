@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<main class="main wrap" role="main">
+  <div class="archive-posts">
+    <div>
+      <h1 class="archive-headline">
+        {{ .Title }}
+      </h1>
+      <ul class="{{ lower .Title }}">
+      {{ $data := .Data }}
+      {{ range $key, $value := .Data.Terms }}
+        <li class="{{ lower $.Title }}-item">
+          <a class="{{ lower $.Title }}-link" href="/{{ $data.Plural }}/{{ $key | urlize }}">
+            {{ $key }}
+          </a>
+        </li>      
+      {{ end }}
+     </ul>
+    </div>
+  </div>
+</main>
+
+{{ end }}

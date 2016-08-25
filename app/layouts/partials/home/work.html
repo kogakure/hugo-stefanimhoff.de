@@ -1,0 +1,20 @@
+<section class="stripe stripe-work">
+  <div class="wrap">
+    <h2>Designer &amp; Developer</h2>
+    <div class="stripe-content">
+      <p>I work as <strong>Front-End Engineer</strong> at <strong>XING</strong> and contributed to a variety of products like <strong>Jobs</strong>, <strong>Mobile</strong>, <strong>Groups</strong>, <strong>Profile</strong> and <strong>SEO</strong>.</p>
+      <p>I am co-creator of the idea for <strong>XING Projects</strong>, a job platform for freelancer. I worked on this Innovation Project from the beginning and helped bringing it to the XING Beta program.</p>
+      <p>I won the XING awards <strong>Best Smart Tools &amp; Services</strong> at the <em>Prototyping Days 2013</em> and <strong>Matterhorn Award – Growth</strong> at <em>Prototyping Days 2015</em>. Furthermore the <strong>SEMY Award</strong> – <em>Deutscher Suchmarketingpreis 2015</em>.</p>
+    </div>
+    <div class="inline-container">
+      {{ range .Site.Data.work.item }}
+        <h3 class="inline-container-headline">{{ .name }}</h3>
+        <ul class="inline-container-list">
+          {{ range .skills }}
+            <li class="inline-container-item">{{ . }}</li>
+          {{ end }}
+        </ul>
+      {{ end}}
+    </div>
+  </div>
+</section>

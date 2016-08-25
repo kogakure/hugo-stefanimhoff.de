@@ -1,0 +1,200 @@
+/*
+ * Based on Plugin: Syntax Highlighter CB
+ * Plugin URI: http://wp.tutsplus.com/tutorials/plugins/adding-a-syntax-highlighter-shortcode-using-prism-js
+ * Description: Highlight your code snippets with an easy to use shortcode based on Lea Verou's Prism.js.
+ * Version: 1.0.0
+ * Author: c.bavota
+ * Author URI: http://bavotasan.comhttp://wp.tutsplus.com/tutorials/plugins/adding-a-syntax-highlighter-shortcode-using-prism-js/ */
+/* http://cbavota.bitbucket.org/syntax-highlighter/  */
+
+/* =====   ===== */
+code[class*="language-"],
+pre[class*="language-"] {
+  background: none;
+  border: 0;
+  border-radius: 3px;
+  color: #ffffff;
+  direction: ltr;
+  font-family: "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
+  hyphens: none;
+  line-height: 1.4;
+  lost-column: 10/8 0;
+  lost-move: -1/8;
+  margin-right: 0 !important;
+  tab-size: 4;
+  text-align: left;
+  text-shadow: 0 1px 1px #000000;
+  white-space: pre;
+  word-spacing: normal;
+  word-wrap: normal;
+}
+
+pre[class*="language-"] code {
+  margin-bottom: 0;
+  padding-bottom: 7px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: static;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    height: 1px;
+    width: 1px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #222222;
+    border-radius: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #89b46b;
+  }
+}
+
+pre[class*="language-"],
+:not(pre) > code[class*="language-"] {
+  background: #222222;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  margin-bottom: $default-spacing;
+  overflow: auto;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+
+  .code-figure & {
+    margin-bottom: 5px;
+  }
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  border-radius: 3px;
+  line-height: 1;
+  padding: 5px 10px;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #797979;
+}
+
+.token.selector,
+.token.operator,
+.token.punctuation {
+  color: #ffffff;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.tag,
+.token.boolean {
+  color: #ffd893;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.hex,
+.token.string {
+  color: #b0c975;
+}
+
+.token.property,
+.token.entity,
+.token.url,
+.token.attr-name,
+.token.keyword {
+  color: #c27628;
+}
+
+.token.regex {
+  color: #9b71c6;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.function,
+.token.constant {
+  color: #e5a638;
+}
+
+.token.variable {
+  color: #fdfba8;
+}
+
+.token.number {
+  color: #8799b0;
+}
+
+.token.important,
+.token.deliminator {
+  color: #e45734;
+}
+
+.token.deleted {
+  color: #ffdddd;
+}
+
+.token.inserted {
+  color: #ddffdd;
+}
+
+/* Line highlight plugin */
+pre[data-line] {
+  padding: 1em 0 1em 3em;
+  position: relative;
+}
+
+.line-highlight {
+  background: rgba(255, 255, 255, 0.2);
+  left: 0;
+  line-height: inherit;
+  margin-top: 1em; /* Same as .prism's padding-top */
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  white-space: pre;
+}
+
+.line-highlight::before,
+.line-highlight[data-end]::after {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: #ffffff;
+  content: attr(data-start);
+  font: bold 65%/1.5 sans-serif;
+  left: 0.6em;
+  min-width: 1em;
+  padding: 0 0.5em;
+  position: absolute;
+  text-align: center;
+  text-shadow: none;
+  top: 0.3em;
+}
+
+.line-highlight[data-end]::after {
+  bottom: 0.4em;
+  content: attr(data-end);
+  top: auto;
+}
+
+/* for line numbers */
+.line-numbers-rows {
+  margin: 0;
+}
+
+.line-numbers-rows span {
+  border-right: 3px #d9d336 solid;
+  padding-right: 10px;
+}

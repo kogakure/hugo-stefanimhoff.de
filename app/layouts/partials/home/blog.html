@@ -1,0 +1,30 @@
+<section class="stripe stripe-blog">
+  <div class="wrap">
+    <h2>Articles</h2>
+
+    <div class="stripe-blog-latest">
+      {{ range first 1 (where .Site.Pages "Type" "articles") }}
+        <h3 class="stripe-blog-headline">
+          <a href="{{ .Permalink }}">
+            {{ .Title }}
+          </a>
+        </h3>
+        <p>{{ if isset .Params "excerpt" }}{{ .Params.excerpt }}{{ else }}{{ .Summary }}{{ end }}</p>
+      {{ end }}
+    </div>
+
+    <div class="stripe-blog-recently">
+      <h3>Still fresh</h3>
+      <ul class="stripe-blog-recently-list">
+        {{ range first 4 (after 1 (where .Site.Pages "Type" "articles")) }}
+        <li class="stripe-blog-recently-item">
+          <a href="{{ .Permalink }}">
+            {{ .Title }}
+          </a>
+        </li>
+      {{ end }}
+      </ul>
+    </div>
+
+  </div>
+</section>

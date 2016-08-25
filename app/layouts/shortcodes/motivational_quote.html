@@ -1,0 +1,13 @@
+<hr>
+
+{{ $quote := .Site.Data.articles.motivationalquotes }}      
+{{ range $quote }}
+  <blockquote>
+    {{ .quotation | safeHTML }}
+    <footer>
+      <strong>{{ .author }}</strong>
+      <cite>{{ .cite | safeHTML }}</cite>
+    </footer>
+  </blockquote>
+  <hr>
+{{ end }}

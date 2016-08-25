@@ -1,0 +1,105 @@
+[[book]]
+  name = "Favorite Books"
+
+  [[book.items]]
+    asin = "3458174303"
+    text = "Ilias. Odyssee"
+
+  [[book.items]]
+    asin = "0881792128"
+    text = "The Elements *of* Typographic Style"
+
+  [[book.items]]
+    asin = "0971084955"
+    text = "Understand? Good. Play!"
+
+  [[book.items]]
+    asin = "3150087147"
+    text = "Herz der Finsternis"
+
+  [[book.items]]
+    asin = "345352795X"
+    text = "Die Foundation-Trilogie"
+
+  [[book.items]]
+    asin = "3442542103"
+    text = "Fight Club"
+
+  [[book.items]]
+    asin = "0307463745"
+    text = "Rework"
+
+  [[book.items]]
+    asin = "0321344758"
+    text = "Don’t Make me Think"
+
+  [[book.items]]
+    asin = "0321749855"
+    text = "Designing the Obvious"
+
+  [[book.items]]
+    asin = "0321928989"
+    text = "Lighting und Rendering"
+
+  [[book.items]]
+    asin = "B0058NWFT8"
+    text = "Cinematography &amp; Directing"
+
+  [[book.items]]
+    asin = "1592531253"
+    text = "Making and Breaking the Grid"
+
+  [[book.items]]
+    asin = "3423091118"
+    text = "Die Kürze des Lebens"
+
+  [[book.items]]
+    asin = "3458318917"
+    text = "Die Räuber vom Liang Schan Moor"
+
+  [[book.items]]
+    asin = "3783161452"
+    text = "Selbstversorgung aus dem Garten"
+
+  [[book.items]]
+    asin = "3831015775"
+    text = "Das neue Buch vom Leben auf dem Lande"
+
+  [[book.items]]
+    asin = "4894445786"
+    text = "The Traditional Colors of Japan"
+
+[[book]]
+  name = "Favorite Comics"
+
+  [[book.items]]
+    asin = "3939625000"
+    text = "Prinz Eisenherz"
+
+  [[book.items]]
+    asin = "3862016609"
+    text = "Daytripper"
+
+  [[book.items]]
+    asin = "1401222668"
+    text = "Watchmen"
+
+  [[book.items]]
+    asin = "1569714029"
+    text = "300"
+
+  [[book.items]]
+    asin = "394264911X"
+    text = "Sin City"
+
+  [[book.items]]
+    asin = "3862010406"
+    text = "Kick-Ass"
+
+  [[book.items]]
+    asin = "0930193350"
+    text = "Usagi Yojimbo"
+
+  [[book.items]]
+    asin = "3867756279"
+    text = "Großes Wilhelm Busch Album"

@@ -1,0 +1,18 @@
+{{ partial "head/base" . }}
+
+<body{{ if .IsHome }} class="home"{{ else if isset .Params "body_class" }} class="{{ .Params.body_class }}"{{ end }}>
+
+  <div class="svg-icons">
+    {{ partial "svg/icons.svg" . }}
+  </div>
+
+  <div class="container">
+    {{ partial "header.html" . }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer" . }}
+  </div>
+
+{{ partial "scripts" . }} 
+<script async src="/assets/js/prism.js"></script>
+</body>
+</html>

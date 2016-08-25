@@ -1,0 +1,24 @@
+[[link]]
+  class = "xing"
+  name = "XING"
+  url = "https://www.xing.com/profile/Stefan_Imhoff"
+
+[[link]]
+  class = "twitter"
+  name = "Twitter"
+  url = "https://twitter.com/kogakure"
+
+[[link]]
+  class = "github"
+  name = "GitHub"
+  url = "https://github.com/kogakure"
+
+[[link]]
+  class = "pinterest"
+  name = "Pinterest"
+  url = "https://www.pinterest.com/kogakure/"
+
+[[link]]
+  class = "feed"
+  name = "Atom-Feed"
+  url = "http://feeds.feedburner.com/stefanimhoff"

@@ -1,0 +1,28 @@
+/* Figure with Image
+ ********************/
+
+.image-figure {
+  clear: both;
+  margin-bottom: $default-spacing-bottom;
+
+  figcaption {
+    margin-top: 5px;
+  }
+}
+
+/* Figures with border */
+.image-figure-border img {
+  border: $image-border-size solid $image-border-color;
+}
+
+
+/* Figures without border */
+.image-figure-noborder img {
+  border: 0;
+}
+
+
+/* Figures with a shadow */
+.image-figure-shadow img {
+  box-shadow: 0 1px 3px rgba($black, 0.5);
+}

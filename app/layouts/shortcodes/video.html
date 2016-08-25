@@ -1,0 +1,3 @@
+<video width="{{ .Get "width" }}" height="{{ .Get "height" }}" preload="none" controls poster="{{ .Get "poster" }}">
+  <source src="{{ .Get "source" }}" type="{{ if eq (.Get "type") "mp4" }}video/mp4{{ else if eq (.Get "type") "ogv" }}video/ogg{{ else if eq (.Get "type") "webm" }}video/webm{{ end }}">
+</video>

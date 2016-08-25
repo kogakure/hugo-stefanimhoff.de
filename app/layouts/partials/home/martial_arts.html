@@ -1,0 +1,24 @@
+<section class="stripe stripe-martial-arts">
+  <div class="wrap">
+    <h2 class="stripe-martial-arts-headline">Martial Artist</h2>
+
+    <div class="stripe-content">
+      <p>I love martial arts, especially the Japanese. I practised Shotokan Karate for seven years and then began training <strong>Bujinkan Budo Taijutsu.</strong></p>
+      <p>In <a href="https://www.wikipedia.org/wiki/Bujinkan">Bujinkan</a> we train <strong>nine different schools</strong>: six <strong>Samurai</strong> and three <strong>Ninja</strong> schools, the oldest of these school is nearly <strong>{{ partial "since_year" (dict "content" . "year" 618) }} years</strong> old and the traditions where given from master to scholar for generations.</p>
+      <p>These martial arts aren’t sports, but highly efficient fighting systems, proven on the battlefields of ancient Japan.</p>
+      <p>I run <a href="http://kogakure.de/">a website</a> on this topic for more than {{ partial "since_year" (dict "content" . "year" 1999) }} years. I collected knowledge about the history, arts, tools, weapons, philosophy and life of the Ninja.</p>
+    </div>
+
+    <div class="inline-container">
+      {{ range .Site.Data.martialarts.item }}
+        <h3 class="inline-container-headline">{{ .name }}</h3>
+        <ul class="inline-container-list">
+          {{ range .schools }}
+            <li class="inline-container-item">{{ . }}</li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
+
+  </div>
+</section>

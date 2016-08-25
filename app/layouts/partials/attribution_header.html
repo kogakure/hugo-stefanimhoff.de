@@ -1,0 +1,15 @@
+<div class="attribution-main-text">
+  <p>
+    {{ if .Site.Params.attribution.cc }}
+    <svg class="attribution-main-icon-cc"><use xlink:href="#cc"></use></svg>
+    {{ else }}
+    <b>©</b>
+    {{ end }}
+    {{ .Site.Params.attribution.author }}, <a href="{{ .Site.Params.attribution.url }}">{{ .Site.Params.attribution.name }}</a>
+  </p>
+  <div class="attribution-main-anchor">
+    <div class="attribution-circle">
+      <div class="attribution-question">?</div>
+    </div>
+  </div>
+</div>
