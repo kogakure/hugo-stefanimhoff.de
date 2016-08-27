@@ -85,15 +85,7 @@
 
   [[recommendation.items]]
     text = "Hugo"
-    url = "http://gohugo.io/q"
-
-  [[recommendation.items]]
-    text = "Jekyll"
-    url = "http://jekyllrb.com/"
-
-  [[recommendation.items]]
-    text = "Octopress"
-    url = "http://octopress.org/"
+    url = "http://gohugo.io/"
 
 [[recommendation]]
   category = "Automation"
@@ -108,78 +100,3 @@
   [[recommendation.items]]
     text = "Webfaction"
     url = "https://www.webfaction.com/?affiliate=kogakure"
-
-[[recommendation]]
-  category = "Social Media"
-
-  [[recommendation.items]]
-    text = "XING"
-    url = "https://www.xing.com/profile/Stefan_Imhoff"
-
-  [[recommendation.items]]
-    text = "LinkedIn"
-    url = "https://www.linkedin.com/in/kogakure"
-
-  [[recommendation.items]]
-    text = "About.me"
-    url = "https://about.me/kogakure"
-
-  [[recommendation.items]]
-    text = "Facebook"
-    url = "https://www.facebook.com/kogakure"
-
-  [[recommendation.items]]
-    text = "Google+"
-    url = "https://plus.google.com/+stefanimhoff/"
-
-  [[recommendation.items]]
-    text = "Twitter"
-    url = "https://twitter.com/kogakure"
-
-  [[recommendation.items]]
-    text = "Flipboard"
-    url = "https://flipboard.com/@kogakure"
-
-  [[recommendation.items]]
-    text = "Pinterest"
-    url = "https://www.pinterest.com/kogakure/"
-
-  [[recommendation.items]]
-    text = "Tumblr"
-    url = "http://kogakure.tumblr.com/"
-
-  [[recommendation.items]]
-    text = "Flickr"
-    url = "https://www.flickr.com/photos/kogakure/"
-
-  [[recommendation.items]]
-    text = "Fitbit"
-    url = "https://www.fitbit.com/user/234BKN"
-
-  [[recommendation.items]]
-    text = "GitHub"
-    url = "https://github.com/kogakure"
-
-  [[recommendation.items]]
-    text = "Last.fm"
-    url = "http://www.last.fm/user/kogakure"
-
-  [[recommendation.items]]
-    text = "YouTube"
-    url = "https://www.youtube.com/channel/UCwzOIyXBFg2jNKMcLOwu8Jw"
-
-  [[recommendation.items]]
-    text = "Vimeo"
-    url = "https://vimeo.com/kogakure"
-
-  [[recommendation.items]]
-    text = "IMDb"
-    url = "http://www.imdb.com/user/ur15936207/"
-
-  [[recommendation.items]]
-    text = "Good Reads"
-    url = "http://www.goodreads.com/kogakure"
-
-  [[recommendation.items]]
-    text = "Kiva"
-    url = "https://www.kiva.org/lender/kogakure"
