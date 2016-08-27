@@ -1,6 +1,7 @@
 baseurl         = "http://stefanimhoff.de/"
 title           = "stefanimhoff.de"
 languageCode    = "en"
+metaDataFormat  = "yaml"
 paginate        = 0
 buildDrafts     = false
 buildFuture     = false
@@ -8,7 +9,7 @@ disable404      = true
 enableRobotsTXT = true
 watch           = true
 
-archtetypedir = "app/archetype"
+archetypedir  = "app/archetypes"
 contentdir    = "app/content"
 dataDir       = "app/data"
 layoutdir     = "app/layouts"
