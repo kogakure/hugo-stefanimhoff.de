@@ -40,7 +40,6 @@
   {{ end }}
 
   <!-- Fonts -->
-  {{ partial "fonts" . }}
   <meta http-equiv="cleartype" content="on">
 
   <!-- Robots -->
@@ -143,6 +142,7 @@
   </script>
 
   <!-- Statistics -->
-  {{ partial "head/mint" . }}
-  {{ partial "head/google_analytics" . }}
+  {{ if .Site.Params.tracking }}
+  {{ partial "head/tracking" . }}
+  {{ end }}
 </head>

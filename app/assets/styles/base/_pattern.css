@@ -1,15 +1,6 @@
 /* Pattern
  **********/
 
-body,
-.footer-legal {
-  @extend pattern-pw-maze-black;
-}
-
-.container {
-  @extend pattern-light-grey;
-}
-
 .footer {
   @extend pattern-classy-fabric;
 }

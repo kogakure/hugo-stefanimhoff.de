@@ -36,6 +36,18 @@ body {
   }
 }
 
+/* Critical patterns */
+body,
+.footer-legal {
+  @extend pattern-pw-maze-black;
+}
+
+.container {
+  @extend pattern-light-grey;
+}
+
+
+
 .article-body p,
 .article-body blockquote,
 .article-body ol,
