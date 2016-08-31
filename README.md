@@ -38,7 +38,7 @@ $ npm run deploy
 ```
 
 - To start the development enviroment run `npm run dev`.
-- To build and preview a produciton build run `npm run preview`.
+- To build and preview a production build run `npm run preview`.
 - To run a production build and sync it to the server run `npm run publish`.
 - To build a production build run `npm run build`.
 - To sync the files to a server run `npm run deploy`.
