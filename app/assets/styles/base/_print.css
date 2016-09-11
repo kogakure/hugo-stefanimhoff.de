@@ -126,7 +126,7 @@
   }
 
   p a::after {
-    content: " (http://stefanimhoff.de/" attr(href) ")";
+    content: " (//stefanimhoff.de/" attr(href) ")";
   }
 
   p a[href^="#"]::after {

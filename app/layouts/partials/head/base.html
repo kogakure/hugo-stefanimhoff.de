@@ -110,11 +110,6 @@
   <!-- Critical CSS -->
   {{ partial "critical" . }}
 
-  {{ "<!--[if lt IE 9]>" | safeHTML }}
-  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-  <style>header#top {background-image:none;}</style>
-  {{ "<![endif]-->" | safeHTML }}
-
   <!-- Feeds -->
   <link href="{{ .Site.Data.settings.social.feedburner_url }}" rel="alternate" title="{{ .Site.Data.settings.title }}" type="application/rss+xml">
   <link href="{{ .Site.Data.settings.social.feedburner_url }}" rel="feed" title="{{ .Site.Data.settings.title }}" type="application/rss+xml">
@@ -137,7 +132,7 @@
       "@context": "http://schema.org",
       "@type": "WebSite",
       "name": "Stefan Imhoff",
-      "url": "http://stefanimhoff.de"
+      "url": "//stefanimhoff.de"
     }
   </script>
 

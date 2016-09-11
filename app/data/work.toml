@@ -1,57 +1,56 @@
 [[item]]
   name = "Code"
   skills = [
-    "HTML", 
-    "CSS", 
-    "PostCSS", 
-    "SCSS", 
-    "Sass", 
-    "Compass", 
-    "Performance", 
-    "Responsive Web Design", 
-    "Critical Render Path", 
-    "JavaScript", 
-    "jQuery", 
-    "Browserify", 
-    "CommonJS", 
-    "Ajax", 
-    "Ruby on Rails", 
-    "Ruby", 
+    "HTML",
+    "CSS",
+    "PostCSS",
+    "SCSS",
+    "Sass",
+    "Compass",
+    "Performance",
+    "Responsive Web Design",
+    "Critical Render Path",
+    "JavaScript",
+    "jQuery",
+    "Browserify",
+    "CommonJS",
+    "Ajax",
+    "Ruby on Rails",
+    "Ruby",
     "Gulp.js"
   ]
 
 [[item]]
   name = "Design"
   skills = [
-    "Affinity Photo", 
-    "Photoshop", 
-    "Illustrator", 
-    "Affinity Designer", 
-    "Affinity Photo", 
-    "Graphic Design", 
-    "Usability", 
-    "Information Architecture", 
-    "User Interface", 
+    "Affinity Designer",
+    "Affinity Photo",
+    "Illustrator",
+    "Photoshop",
+    "Graphic Design",
+    "Usability",
+    "Information Architecture",
+    "User Interface",
     "Graphic Design"
   ]
 
 [[item]]
   name = "Agile Methods"
   skills = [
-    "Scrum", 
+    "Scrum",
     "Kanban"
   ]
 
 [[item]]
   name = "Misc"
   skills = [
-    "Git", 
-    "Vim", 
-    "Zsh", 
-    "Bash", 
-    "tmux", 
+    "Git",
+    "Vim",
+    "Zsh",
+    "Bash",
+    "tmux",
     "Jekyll",
-    "Hugo", 
-    "Apache", 
+    "Hugo",
+    "Apache",
     "SEO"
   ]
